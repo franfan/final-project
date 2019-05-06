@@ -1,11 +1,13 @@
 I download the code form "https://arduino.stackexchange.com/questions/31027/how-to-turn-a-led-if-ultranonic-hc-sr04-reading-is-on-defined-range-for-some-int"
-#define trigPin 7
-#define echoPin 8
-#define led 13
-#define led2 12
+#define trigPin 12
+#define echoPin 13
+#define led 10
+#define led2 11
+#define buzzer 3
 
 long duration, distance, interval = 4000;
 int detection = 0;
+int sound = 250;
 
 void setup() {
    Serial.begin (9600);
@@ -13,6 +15,7 @@ void setup() {
    pinMode(echoPin, INPUT);
    pinMode(led, OUTPUT);
    pinMode(led2, OUTPUT);
+   pinMode(buzzer, OUTPUT);
    detection = millis();
 }
 
@@ -23,16 +26,21 @@ void loop() {
    if (distance > 0 && distance < 10 && (millis() - detection >= interval)) {
    digitalWrite(led, HIGH);
    digitalWrite(led2, LOW);
+   tone(buzzer,261 );
+   delay(1000);
    } else {
    digitalWrite(led, LOW);
    digitalWrite(led2, HIGH);
    }
+   noTone(buzzer);
+   delay(1000);
 
    Serial.print(millis());
    Serial.print(" - ");
    Serial.println(distance);
 
    delay(250);
+
 }
 
 void ultraSonic() {
