@@ -6,9 +6,13 @@ I am building a distance tracking equipment for this final project, when the dis
 I used with sr04, uno, leds, buzzer, male wires to create this project.
 # Timeline
 week0: write proposals
+
 week1: figure out the wires, watch toturials
+
 week2: figure out the codes, and rest of the things
+
 week3: put all of them together
+
 week4: present!
 # Challenges
 I think the project is easy to understand, but difficulte to put them together, and also there is something wierd going on that I can't figure out sometimes, and the toturials sometimes are not very easy to practice, I think I need some time to study deeper about coding and arduino.
