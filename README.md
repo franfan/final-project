@@ -1,7 +1,7 @@
 # final-project:Distance tracker
 The final project is in order to track the distance with arduino, and using with leds and buzzer that can tell people how far is the distance.
 # Summary
-I am building a distance tracking equipment for this final project, when the distance is smaller than 10cm, the green led is lightning, and the buzzer will make some noise, if the distance is bigger than 10cm, then the yellow led is lighting. I think it's a great simple distance track for beginner to work with
+I am building a distance tracking equipment for this final project, when the distance is smaller than 10cm, the green led is lightning, and the buzzer will make some noise, if the distance is bigger than 10cm, then the yellow led is lighting. I think it's a great simple distance track for beginner to work with. And I think the project is a great beginner for alarms as well.
 # Componet parts
 I used with sr04, uno, leds, buzzer, male wires to create this project.
 # Timeline
